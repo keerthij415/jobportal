@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Job Portal</h1>
+
+    <div class="filters">
+        <input type="text" id="search" placeholder="Search jobs...">
+
+        <select id="locationFilter">
+            <option value="all">All Locations</option>
+            <option>Chennai</option>
+            <option>Bangalore</option>
+            <option>Hyderabad</option>
+            <option>Mumbai</option>
+            <option>Pune</option>
+            <option>Delhi</option>
+        </select>
+
+        <select id="companyFilter">
+            <option value="all">All Companies</option>
+            <option>TCS</option>
+            <option>Infosys</option>
+            <option>Wipro</option>
+            <option>HCL</option>
+            <option>Accenture</option>
+            <option>Cognizant</option>
+            <option>Zoho</option>
+            <option>Capgemini</option>
+            <option>IBM</option>
+            <option>Amazon</option>
+            <option>Microsoft</option>
+            <option>Google</option>
+            <option>Adobe</option>
+        </select>
+    </div>
+
+    <!-- JOB LIST -->
+    <div id="jobList"></div>
+
+    <!-- SAVED JOBS -->
+    <div id="savedJobsContainer">
+        <h2>Saved Jobs</h2>
+        <div id="savedJobs"></div>
+    </div>
+
+    <!-- APPLY MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Apply Job</h2>
+            <input type="text" id="name" placeholder="Enter your name">
+            <input type="email" id="email" placeholder="Enter your email">
+            <input type="text" id="phone" placeholder="Enter your phone">
+            <input type="file" id="resume">
+            <button onclick="submitForm()">Submit</button>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
